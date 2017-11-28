@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Pug-Sass Boilerplate
+    // Styles
+    link(href='./assets/css/styles.min.css', rel='stylesheet')
+  body
+    include header.pug
+    block content
+    include footer.pug
+    // Scripts
+    script(src='./assets/js/scripts.min.js')
