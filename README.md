@@ -1,6 +1,6 @@
-# Pug-Sass Boilerplate
+# Pug-Sass Starter
 
-A simple boilerplate for building HTML templates with Pug and Sass.
+A simple starter for building HTML templates with Pug and Sass.
 
 ## Requirements
 
