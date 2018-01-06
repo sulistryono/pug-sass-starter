@@ -50,7 +50,7 @@ When you execute `npm start` or `gulp` for the first time, there will be at leas
     * **pages**
       * `_index.scss` : Example sass for specific page (index page).
     * `styles.scss` : Import all scss files.
-* `index.html` : All HTML files will be placed here.
+* `index.html` : Prebuild HTML file, other HTML files will be placed on root folder.
 
 ## Gulp Plugins
 
