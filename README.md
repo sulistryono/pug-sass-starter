@@ -8,7 +8,7 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 
 ## Install
 
-* Navigate to the directory where the _pug-sass-boilerplate_ folder is located using **Terminal**.
+* Navigate to the directory where the _pug-sass-starter_ folder is located using **Terminal**.
 * Execute `npm install`.
 
 ## Run
@@ -16,7 +16,7 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 * Execute `npm start` or `gulp`.
 * Open `http://localhost:8080/` on your web browser.
 
-When you execute `npm start` or `gulp` for the first time, there will be at least 3 new files created. There are `styles.min.css` file on `assets/css` folder, `scripts.min.js` file on `assets/js` folder and `index.html` file on it _pug-sass-boilerplate_ root folder.
+When you execute `npm start` or `gulp` for the first time, there will be at least 3 new files created. There are `styles.min.css` file on `assets/css` folder, `scripts.min.js` file on `assets/js` folder and `index.html` file on it _pug-sass-starter_ root folder.
 
 ## Folder Structures
 
