@@ -1,7 +1,7 @@
 {
-  "name": "pug-sass-boilerplate",
+  "name": "pug-sass-starter",
   "version": "1.0.0",
-  "description": "A simple boilerplate for building HTML templates with Pug and Sass.",
+  "description": "A simple starter for building HTML templates with Pug and Sass.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
