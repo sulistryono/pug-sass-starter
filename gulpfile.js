@@ -38,7 +38,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('views', function buildHTML() {
-  return gulp.src('./pug/pages/*.pug')
+  return gulp.src('./src/pug/pages/*.pug')
   .pipe(plumber())
   .pipe(pug({
       pretty: true
@@ -51,7 +51,7 @@ gulp.task('watch', function () {
   gulp.watch(['./*.html'], ['html']);
   gulp.watch(['./src/sass/**/*.scss'], ['styles']);
   gulp.watch(['./src/js/scripts.js'], ['scripts']);
-  gulp.watch(['./pug/**/*.pug'], ['views']);
+  gulp.watch(['./src/pug/**/*.pug'], ['views']);
 });
 
 gulp.task('default', ['connect', 'styles', 'scripts', 'html', 'views', 'watch']);
