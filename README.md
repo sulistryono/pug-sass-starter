@@ -1,6 +1,6 @@
 # Pug-Sass Starter
 
-A simple starter for building HTML templates with Pug and Sass.
+A simple starter for building HTML templates using Pug and Sass.
 
 ## Requirements
 
@@ -15,24 +15,6 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 
 * Execute `npm start` or `gulp`.
 * Open `http://localhost:8080/` on your web browser.
-
-## 3rd Party Libraries
-
-If you wannna add 3rd party library to your project, install the library using npm, and then include it on `gulpfile.js ` file, please see code below for example.
-
-```js
-var vendorStyles = [
-  // 3rd party styles here, if possible use minified version files please.
-  'node_modules/bootstrap/dist/css/bootstrap.min.css'
- ];
- 
- var vendorScripts = [
-  // 3rd party scripts here, if possible use minified version files please.
-  'node_modules/bootstrap/dist/js/bootstrap.min.js'
- ];
-```
-
-There are already gulp tasks that will minifying and concating all of your 3rd party libraries, you just need to execute `gulp styles-combine`, `gulp scripts-combine` or `gulp combine`, wait for a moment and it will automatically creates `vendors.min.css` and `vendors.min.js` inside `assets` folder. Do not forget to include vendors files on `base.pug` file. Finally, run your project using `npm start` or `gulp`.
 
 ## Folders Structure
 
@@ -80,5 +62,3 @@ There are already gulp tasks that will minifying and concating all of your 3rd p
 * [gulp-rename](https://www.npmjs.com/package/gulp-rename) : Gulp plugin to rename files easily, adding `.min` suffix.
 * [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your SCSS into CSS.
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) : Minify your JS.
-* [gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css) : Minify your CSS.
-* [gulp-concat](https://www.npmjs.com/package/gulp-concat) : Concating your files.

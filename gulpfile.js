@@ -3,9 +3,7 @@ var gulp    = require('gulp'),
     connect = require('gulp-connect'),
     pug     = require('gulp-pug'),
     plumber = require('gulp-plumber'),
-    concat  = require('gulp-concat'),
     rename  = require('gulp-rename'),
-    clean   = require('gulp-clean-css'),
     uglify  = require('gulp-uglify');
 
 gulp.task('connect', function() {
@@ -14,30 +12,6 @@ gulp.task('connect', function() {
     port: 8080
   });
 });
-
-var vendorStyles = [
-  // 3rd party styles here, if possible use minified version files please.
- ];
- 
- var vendorScripts = [
-  // 3rd party scripts here, if possible use minified version files please.
- ];
- 
- gulp.task('styles-combine', function() {
-   gulp.src(vendorStyles)
-   .pipe(plumber())
-   .pipe(concat('vendors.min.css'))
-   .pipe(clean())
-   .pipe(gulp.dest('assets/css'));
- });
- 
- gulp.task('scripts-combine', function() {
-   gulp.src(vendorScripts)
-   .pipe(plumber())
-   .pipe(concat('vendors.min.js'))
-   .pipe(uglify())
-   .pipe(gulp.dest('assets/js'));
- });
 
 gulp.task('styles', function() {
   gulp.src('src/sass/styles.scss')
@@ -83,6 +57,4 @@ gulp.task('watch', function () {
   gulp.watch(['src/pug/**/*.pug'], ['views']);
 });
 
-gulp.task('combine', ['styles-combine', 'scripts-combine']);
-
-gulp.task('default', ['connect', 'styles', 'scripts', 'html', 'views', 'watch']);
+gulp.task('default', gulp.series(['connect', 'styles', 'scripts', 'html', 'views', 'watch']));
