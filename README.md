@@ -16,6 +16,10 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 * Execute `npm start` or `gulp`.
 * Open `http://localhost:8080/` on your web browser.
 
+## Build
+
+* Execute `gulp build`.
+
 ## Folders Structure
 
 ```
