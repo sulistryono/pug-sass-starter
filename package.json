@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-connect": "^5.7.0",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",

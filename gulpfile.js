@@ -4,7 +4,8 @@ var gulp    = require('gulp'),
     pug     = require('gulp-pug'),
     plumber = require('gulp-plumber'),
     rename  = require('gulp-rename'),
-    uglify  = require('gulp-uglify');
+    uglify  = require('gulp-uglify'),
+    autoprefixer = require('gulp-autoprefixer');
 
 function reload(done) {
   connect.server({
@@ -19,6 +20,10 @@ function styles() {
     gulp.src('src/sass/styles.scss')
     .pipe(plumber())
     .pipe(sass())
+    .pipe(autoprefixer({
+      browsers: ['last 3 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('assets/css'))
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(rename('styles.min.css'))

@@ -37,10 +37,11 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
       - base.pug : Base pug file.
     + layouts
       - default-layout.pug : Default layout pug file.
-      - footer.pug : Footer pug file.
-      - header.pug : Header pug file.
     + pages
       - index.pug : Example page pug file, it contains h1 only.
+    + partials
+      - footer.pug : Footer pug file.
+      - header.pug : Header pug file.
   + sass
     + base
       - _global.scss : Global styles for html, body, section, headings, anchor etc.
