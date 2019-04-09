@@ -17,7 +17,7 @@ function reload(done) {
 
 function styles() {
   return (
-    gulp.src('src/sass/styles.scss')
+    gulp.src('src/sass/styles.sass')
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer({
@@ -66,7 +66,7 @@ function views() {
 
 function watchTask(done) {
   gulp.watch('*.html', html);
-  gulp.watch('src/sass/**/*.scss', styles);
+  gulp.watch('src/sass/**/*.sass', styles);
   gulp.watch('src/js/scripts.js', scripts);
   gulp.watch('src/pug/**/*.pug', views);
   done();

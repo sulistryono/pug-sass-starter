@@ -44,18 +44,18 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
       - header.pug : Header pug file.
   + sass
     + base
-      - _global.scss : Global styles for html, body, section, headings, anchor etc.
-      - _mixins.scss : Store your mixins here;
-      - _placeholders.scss : Store your placeholders here;
-      - _variables.scss : Store your variables here;
+      - _global.sass : Global styles for html, body, section, headings, anchor etc.
+      - _mixins.sass : Store your mixins here;
+      - _placeholders.sass : Store your placeholders here;
+      - _variables.sass : Store your variables here;
     + components
-      - _components.scss : It contains components styles such as buttons, modals etc.
+      - _components.sass : It contains components styles such as buttons, modals etc.
     + layouts
-      - _footer.scss : It contains footer styles.
-      - _header.scss : It contains header styles.
+      - _footer.sass : It contains footer styles.
+      - _header.sass : It contains header styles.
     + pages
-      - _index.scss : Example scss for specific page.
-    - styles.scss : Import all scss files.
+      - _index.sass : Example sass for specific page.
+    - styles.sass : Import all sass files.
 - index.html : Prebuild HTML file, other HTML files will be placed here too.
 ```
 
@@ -65,5 +65,5 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 * [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) : Prevent pipe breaking caused by errors from gulp plugins.
 * [gulp-pug](https://www.npmjs.com/package/gulp-pug) : Gulp plugin for compiling Pug templates, compile Pug into HTML.
 * [gulp-rename](https://www.npmjs.com/package/gulp-rename) : Gulp plugin to rename files easily, adding `.min` suffix.
-* [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your SCSS into CSS.
+* [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your Sass into CSS.
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) : Minify your JS.
