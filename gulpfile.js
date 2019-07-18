@@ -21,7 +21,7 @@ function styles() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer({
-      browsers: ['last 3 versions'],
+      overrideBrowserslist: ['last 3 versions'],
       cascade: false
     }))
     .pipe(gulp.dest('assets/css'))
