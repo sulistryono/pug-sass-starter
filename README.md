@@ -42,20 +42,20 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
     + partials
       - footer.pug : Footer pug file.
       - header.pug : Header pug file.
-  + sass
+  + scss
     + base
-      - _global.sass : Put your global styles here, such us html, body, section, headings, anchor etc.
-      - _mixins.sass : Put your mixins here;
-      - _placeholders.sass : Put your placeholders here;
-      - _variables.sass : Put your variables here;
+      - _global.scss : Put your global styles here, such us html, body, section, headings, anchor etc.
+      - _mixins.scss : Put your mixins here;
+      - _placeholders.scss : Put your placeholders here;
+      - _variables.scss : Put your variables here;
     + components
-      - _components.sass : Put your components styles here, such as buttons, modals etc.
+      - _components.scss : Put your components styles here, such as buttons, modals etc.
     + layouts
-      - _footer.sass : Put your footer styles here.
-      - _header.sass : Put your header styles here.
+      - _footer.scss : Put your footer styles here.
+      - _header.scss : Put your header styles here.
     + pages
-      - _index.sass : Example sass for specific page.
-    - styles.sass : Import all sass files.
+      - _index.scss : Example scss for specific page.
+    - styles.scss : Import all scss files.
 - index.html : Prebuild HTML file, other HTML files will be placed here too.
 ```
 
@@ -65,5 +65,5 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 * [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) : Prevent pipe breaking caused by errors from gulp plugins.
 * [gulp-pug](https://www.npmjs.com/package/gulp-pug) : Gulp plugin for compiling Pug templates, compile Pug into HTML.
 * [gulp-rename](https://www.npmjs.com/package/gulp-rename) : Gulp plugin to rename files easily, adding `.min` suffix.
-* [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your Sass into CSS.
+* [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your Sass with SCSS syntax into CSS.
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) : Minify your JS.
