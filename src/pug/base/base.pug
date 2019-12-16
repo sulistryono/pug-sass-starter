@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    title Our Journey Begins
+    title Making People believe in themselves | Kingsley David Gyimah Agyemang
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     // Google site verification
@@ -26,8 +26,35 @@ html(lang="en")
     // FAVICON
     link(rel="shortcut icon" type="image/png" href="favicon.ico/favicon-16x16.png")
 
-    // Start of Async Drift Code
+  block variables
+  - var pageName;
+  - var pageId;
+
+  body
+
+    block layout
+
+    // Scripts
+    // Notification form Handler - DevLess
+    script.devless-connection(src="http://kgyimah.herokuapp.com/js/devless-sdk.js" devless-con-token="1c7bcbb0f9671b0086cd2dc61a74216f")
+    script(src="js/jquery.min.js")
+    script(src="js/jquery-migrate-3.0.1.min.js")
+    script(src="js/popper.min.js")
+    script(src="js/bootstrap.min.js")
+    script(src="js/jquery.easing.1.3.js")
+    script(src="js/jquery.waypoints.min.js")
+    script(src="js/jquery.stellar.min.js")
+    script(src="js/owl.carousel.min.js")
+    script(src="js/jquery.magnific-popup.min.js")
+    script(src="js/aos.js")
+    script(src="js/jquery.animateNumber.min.js")
+    script(src="js/scrollax.min.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false")
+    script(src="js/google-map.js")
+    script(src="js/main.js")
     script.
+      //CHATBOT
+      // <!-- Start of Async Drift Code -->
       "use strict";
       !function() {
       var t = window.driftt = window.drift = window.driftt || [];
@@ -51,12 +78,12 @@ html(lang="en")
       }();
       drift.SNIPPET_VERSION = '0.3.1';
       drift.load('pu88nekwzsb8');
-    // End of Async Drift Code
-  body
-    block layout
-    // Scripts
+      // End of Async Drift Code
+
+    
+    //- - var pageId = site_visitors;
     // Notification form Handler - DevLess
-    script.devless-connection(src="http://kgyimah.herokuapp.com/js/devless-sdk.js" devless-con-token="1c7bcbb0f9671b0086cd2dc61a74216f")
+    script.devless-connection(src="https://kgyimah.herokuapp.com/js/devless-sdk.js" devless-con-token="1c7bcbb0f9671b0086cd2dc61a74216f")
     script(src="js/jquery.min.js")
     script(src="js/jquery-migrate-3.0.1.min.js")
     script(src="js/popper.min.js")
@@ -69,7 +96,22 @@ html(lang="en")
     script(src="js/aos.js")
     script(src="js/jquery.animateNumber.min.js")
     script(src="js/scrollax.min.js")
-    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false")
-    script(src="js/google-map.js")
     script(src="js/main.js")
-    //- script(src="./assets/js/scripts.min.js")
+
+    // The value for the pageId should be gotten from the database TABLE name
+    - var pageId = "index";
+      script.
+        // Date Visited
+        var dateTime = new Date().toString();
+        var pageName = "pagename is " + JSON.stringify(window.location);
+        var browser = "<p>" + "userAgent: " + navigator.userAgent +
+        "<p>" + " language: "+ navigator.language +
+        "<p>" + " referrer: "+ document.referrer +
+        "<p>" + " screen width: " + screen.width +
+        " x " + " screen height: " + screen.height;
+        window.onload = function whenVisited() {
+        SDK.addData("posts", #{pageId}, {"site_visited":dateTime, "page":pageName, "browse":browser}, function() {
+        return;
+        });
+        }
+      //- script(src="./assets/js/scripts.min.js")

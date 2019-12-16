@@ -1,90 +1,285 @@
 extends ../layouts/default-layout.pug
 block content
-  #colorlib-main
-    section.ftco-section.ftco-no-pt.ftco-no-pb.bg-light
-      .container.px-0
-        .row.no-gutters
-          .col-md-4.d-flex
-            .blog-entry.ftco-animate.active
-              .carousel-blog.owl-carousel
-                .item
-                  a.img(href="welcome.html" style="background-image: url(images/welcome.jpg);")
-                .item
-                  a.img(href="welcome.html" style="background-image: url(images/welcome.webp);")
-              .text.p-4
-                h3.mb-2
-                  a(href="welcome.html") Welcome
-                .meta-wrap
-                  p.meta
-                    span
-                      i.icon-calendar.mr-2
-                      | Nov. 21, 2019
-                    span
-                      a(href="#")
-                        i.icon-folder-o.mr-2
-                        | Welcome
-                    span
-                      i.icon-comment2.mr-2
-                      | 5 Comments
-                p.mb-4 A lovely welcome to you.
-                p
-                  a.btn-custom(href="welcome.html")
-                    | Read More 
-                    span.ion-ios-arrow-forward
-          .col-md-8.d-flex
-            .row
-              .col-md-12
-                .blog-entry.ftco-animate.d-md-flex.align-items-center
-                  a.img.img-2.popup-vimeo.d-flex.align-items-center.justify-content-center(href="https://www.youtube.com/watch?v=xr6jzrM4DFE" target="_blank" style="background-image: url(images/loving-heart.jpg);")
-                    .icon.d-flex.align-items-center.justify-content-center
-                      span.ion-ios-play
-                  .text.text-2.p-4
-                    h3.mb-2
-                      a(href="posts/a-loving-heart.html") A Loving Heart is the Truest Wisdom
-                    .meta-wrap
-                      p.meta
-                        span
-                          i.icon-calendar.mr-2
-                          | Nov. 21, 2019
-                        span
-                          a(href="posts/a-loving-heart.html")
-                            i.icon-folder-o.mr-2
-                            | Lifestyle
-                        span
-                          i.icon-comment2.mr-2
-                          | 5 Comment
-                    p.mb-4
-                      | An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers
-                    p
-                      a.btn-custom(href="posts/a-loving-heart.html")
-                        | Read More 
-                        span.ion-ios-arrow-forward
-              .col-md-12
-                .blog-entry.ftco-animate.d-md-flex.align-items-center
-                  a.img.img-2.order-md-last(href="posts/live-life-with-purpose.html" style="background-image: url(images/purpose-1068x712.jpg);")
-                  .text.text-2.text-md-right.p-4
-                    h3.mb-2
-                      a(href="posts/live-life-with-purpose.html") Live Life With Purpose
-                    .meta-wrap
-                      p.meta
-                        span
-                          i.icon-calendar.mr-2
-                          | Nov. 21, 2019
-                        span
-                          a(href="posts/live-life-with-purpose.html")
-                            i.icon-folder-o.mr-2
-                            | Lifestyle
-                        span
-                          i.icon-comment2.mr-2
-                          | 5 Comment
-                    p.mb-4
-                      | The mystery of human existence lies not in just staying alive, but in finding something to live for.
-                      br
-                      | – Fyodor Dostoyevsky
-                    p
-                      a.btn-custom(href="live-life-with-purpose.html")
-                        | Read More 
-                        span.ion-ios-arrow-forward
+  #colorlib-page
+    a.js-colorlib-nav-toggle.colorlib-nav-toggle(href="#")
+      i
+    aside#colorlib-aside.js-fullheight.img(role="complementary" style="background-image: url(images/sidebar-bg.jpg);")
+      h1#colorlib-logo.mb-4
+        a(href="index.html") Our Journey
+      nav#colorlib-main-menu(role="navigation")
+        ul
+          li.colorlib-active
+            a(href="index.html") Home
+          li
+            a(href="about.html") About
+          li
+            a(href="lifestyle.html") Lifestyle
+          li
+            a(href="posts/featured.html") Featured Writers
+          li
+            a(href="contact.html") Contact
+      .colorlib-footer
+        .mb-4
+          h3 Subscribe for newsletter
+          form.colorlib-subscribe-form(class="dv-add-oneto:contact:subscribe")
+            .form-group.d-flex
+              .icon
+                button.btn.btn-primary-outline.icon-paper-plane.text-white(type="submit")
+              input.form-control(type="email" name="email" placeholder="Enter Email Address" aria-label="Enter email..." aria-describedby="basic-addon")
+        p.pfooter
+          | ionize by 
+          a(href="https://colorlib.com") colorlib
+          |  Licensed under 
+          a(rel="license" href="http://creativecommons.org/licenses/by/3.0/")
+            | Creative Commons: By Attribution 3.0 License
+          | .
+    // END COLORLIB-ASIDE
+    #colorlib-main
+      section.ftco-section.ftco-no-pt.ftco-no-pb.bg-light
+        .container.px-0
+          .row.no-gutters
+            .col-md-4.d-flex
+              .blog-entry.ftco-animate.active
+                .carousel-blog.owl-carousel
+                  .item
+                    a.img(href="welcome.html" style="background-image: url(images/welcome.jpg);")
+                  .item
+                    a.img(href="welcome.html" style="background-image: url(images/welcome.webp);")
+                .text.p-4
+                  h3.mb-2
+                    a(href="welcome.html") Welcome
+                  .meta-wrap
+                    p.meta
+                      span
+                        i.icon-calendar.mr-2
+                        | Nov. 21, 2019
+                      span
+                        a(href="#")
+                          i.icon-folder-o.mr-2
+                          | Welcome
+                      span
+                        i.icon-comment2.mr-2
+                        | 5 Comments
+                  p.mb-4 A lovely welcome to you. 
+                  p
+                    a.btn-custom(href="welcome.html")
+                      | Read More 
+                      span.ion-ios-arrow-forward
+            .col-md-8.d-flex
+              .row
+                .col-md-12
+                  .blog-entry.ftco-animate.d-md-flex.align-items-center
+                    a.img.img-2.popup-vimeo.d-flex.align-items-center.justify-content-center(href="https://www.youtube.com/watch?v=xr6jzrM4DFE" target="_blank" style="background-image: url(images/loving-heart.jpg);")
+                      .icon.d-flex.align-items-center.justify-content-center
+                        span.ion-ios-play
+                    .text.text-2.p-4
+                      h3.mb-2
+                        a(href="posts/a-loving-heart.html") A Loving Heart is the Truest Wisdom
+                      .meta-wrap
+                        p.meta
+                          span
+                            i.icon-calendar.mr-2
+                            | Nov. 21, 2019
+                          span
+                            a(href="posts/a-loving-heart.html")
+                              i.icon-folder-o.mr-2
+                              | Lifestyle
+                          span
+                            i.icon-comment2.mr-2
+                            | 5 Comment
+                      p.mb-4
+                        | An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers
+                      p
+                        a.btn-custom(href="posts/a-loving-heart.html")
+                          | Read More 
+                          span.ion-ios-arrow-forward
+                .col-md-12
+                  .blog-entry.ftco-animate.d-md-flex.align-items-center
+                    a.img.img-2.order-md-last(href="posts/live-life-with-purpose.html" style="background-image: url(images/purpose-1068x712.jpg);")
+                    .text.text-2.text-md-right.p-4
+                      h3.mb-2
+                        a(href="posts/live-life-with-purpose.html") Live Life With Purpose
+                      .meta-wrap
+                        p.meta
+                          span
+                            i.icon-calendar.mr-2
+                            | Nov. 21, 2019
+                          span
+                            a(href="posts/live-life-with-purpose.html")
+                              i.icon-folder-o.mr-2
+                              | Lifestyle
+                          span
+                            i.icon-comment2.mr-2
+                            | 5 Comment
+                      p.mb-4
+                        | The mystery of human existence lies not in just staying alive, but in finding something to live for.
+                        br
+                        | 				              – Fyodor Dostoyevsky
+                      p
+                        a.btn-custom(href="live-life-with-purpose.html")
+                          | Read More 
+                          span.ion-ios-arrow-forward
+            //
+              <div class="col-md-4 d-flex">
+              <div class="blog-entry ftco-animate">
+              <a href="single.html" class="img" style="background-image: url(images/next-level.jpg);"></a>
+              <div class="text p-4">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-4 d-flex">
+              <div class="blog-entry ftco-animate">
+              <a href="single.html" class="img" style="background-image: url(images/image_5.jpg);"></a>
+              <div class="text p-4">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-4 d-flex">
+              <div class="blog-entry ftco-animate">
+              <a href="single.html" class="img" style="background-image: url(images/loving-heart.jpg);"></a>
+              <div class="text p-4">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-8 d-flex">
+              <div class="row">
+              <div class="col-md-12">
+              <div class="blog-entry ftco-animate d-md-flex align-items-center">
+              <a href="single.html" class="img img-2" style="background-image: url(images/my-everything.jpg);"></a>
+              <div class="text text-2 p-4">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-12">
+              <div class="blog-entry ftco-animate d-md-flex align-items-center">
+              <a href="single.html" class="img img-2 order-md-last" style="background-image: url(images/welcome.jpg);"></a>
+              <div class="text text-2 p-4 text-md-right">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-4 d-flex">
+              <div class="blog-entry ftco-animate">
+              <a href="single.html" class="img" style="background-image: url(images/loving-heart.jpg);"></a>
+              <div class="text p-4">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-4 d-flex">
+              <div class="blog-entry ftco-animate">
+              <a href="single.html" class="img" style="background-image: url(images/next-level.jpg);"></a>
+              <div class="text p-4">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-4 d-flex">
+              <div class="blog-entry ftco-animate d-flex flex-column-reverse">
+              <a href="single.html" class="img" style="background-image: url(images/image_5.jpg);"></a>
+              <div class="text p-4">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-4 d-flex">
+              <div class="blog-entry ftco-animate">
+              <a href="single.html" class="img" style="background-image: url(images/loving-heart.jpg);"></a>
+              <div class="text p-4">
+              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+              <div class="meta-wrap">
+              <p class="meta">
+              <span><i class="icon-calendar mr-2"></i>Nov. 21, 2019</span>
+              <span><a href="single.html"><i class="icon-folder-o mr-2"></i>Welcome</a></span>
+              <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+              </p>
+              </div>
+              <p class="mb-4">An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers</p>
+              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+              </div>
+              </div>
+              </div>
+              </div>
+    // END COLORLIB-MAIN
+  // END COLORLIB-PAGE
   // loader
   #ftco-loader.show.fullscreen
     svg.circular(width="48px" height="48px")

@@ -1,3 +1,4 @@
+INDEXcode 
 doctype html
 html(lang="en")
   head
@@ -22,34 +23,10 @@ html(lang="en")
     link(rel="stylesheet" href="css/icomoon.css")
     link(rel="stylesheet" href="css/style.css")
     // FAVICON
-    link(rel="shortcut icon" type="image/png" href="favicon.ico/favicon-16x16.png")
-    // Start of Async Drift Code
-    script.
-      "use strict";
-      !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-      t.factory = function(e) {
-      return function() {
-      var n = Array.prototype.slice.call(arguments);
-      return n.unshift(e), t.push(n), t;
-      };
-      }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-      }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-      };
-      }
-      }();
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('pu88nekwzsb8');
-    // End of Async Drift Code
-    
+    link(rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png")
+    link(rel="manifest" href="favicon_io/site.webmanifest")
   body
     #colorlib-page
       a.js-colorlib-nav-toggle.colorlib-nav-toggle(href="#")
@@ -111,7 +88,7 @@ html(lang="en")
                         span
                           i.icon-comment2.mr-2
                           | 5 Comments
-                    p.mb-4 A lovely welcome to you.
+                    p.mb-4 A lovely welcome to you. 
                     p
                       a.btn-custom(href="welcome.html")
                         | Read More 
@@ -165,7 +142,7 @@ html(lang="en")
                         p.mb-4
                           | The mystery of human existence lies not in just staying alive, but in finding something to live for.
                           br
-                          | – Fyodor Dostoyevsky
+                          | 				              – Fyodor Dostoyevsky
                         p
                           a.btn-custom(href="live-life-with-purpose.html")
                             | Read More 
@@ -337,7 +314,7 @@ html(lang="en")
         circle.path-bg(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee")
         circle.path(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00")
     // Notification form Handler - DevLess
-    script.devless-connection(src="http://kgyimah.herokuapp.com/js/devless-sdk.js" devless-con-token="1c7bcbb0f9671b0086cd2dc61a74216f")
+    script.devless-connection(src="https://kgyimah.herokuapp.com/js/devless-sdk.js" devless-con-token="1c7bcbb0f9671b0086cd2dc61a74216f")
     script(src="js/jquery.min.js")
     script(src="js/jquery-migrate-3.0.1.min.js")
     script(src="js/popper.min.js")
@@ -350,6 +327,44 @@ html(lang="en")
     script(src="js/aos.js")
     script(src="js/jquery.animateNumber.min.js")
     script(src="js/scrollax.min.js")
-    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false")
-    script(src="js/google-map.js")
     script(src="js/main.js")
+    script.
+      // Date Visited
+      var dateTime = new Date().toString();
+      var pageName = "pagename is " + JSON.stringify(window.location);
+      var browser = "<p>" + "userAgent: " + navigator.userAgent +
+      "<p>" + " language: "+ navigator.language +
+      "<p>" + " referrer: "+ document.referrer +
+      "<p>" + " screen width: " + screen.width +
+      " x " + " screen height: " + screen.height;
+      window.onload = function whenVisited() {
+      SDK.addData("posts", "site_visitors", {"site_visited":dateTime, "page":pageName, "browse":browser}, function() {
+      return;
+      });
+      }
+      //CHATBOT
+      // <!-- Start of Async Drift Code -->
+      "use strict";
+      !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+      t.factory = function(e) {
+      return function() {
+      var n = Array.prototype.slice.call(arguments);
+      return n.unshift(e), t.push(n), t;
+      };
+      }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+      }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+      };
+      }
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('pu88nekwzsb8');
+    // End of Async Drift Code
