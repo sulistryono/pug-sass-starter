@@ -1,3 +1,92 @@
 extends ../layouts/default-layout.pug
 block content
-  h1 Hello World!
+  #colorlib-main
+    section.ftco-section.ftco-no-pt.ftco-no-pb.bg-light
+      .container.px-0
+        .row.no-gutters
+          .col-md-4.d-flex
+            .blog-entry.ftco-animate.active
+              .carousel-blog.owl-carousel
+                .item
+                  a.img(href="welcome.html" style="background-image: url(images/welcome.jpg);")
+                .item
+                  a.img(href="welcome.html" style="background-image: url(images/welcome.webp);")
+              .text.p-4
+                h3.mb-2
+                  a(href="welcome.html") Welcome
+                .meta-wrap
+                  p.meta
+                    span
+                      i.icon-calendar.mr-2
+                      | Nov. 21, 2019
+                    span
+                      a(href="#")
+                        i.icon-folder-o.mr-2
+                        | Welcome
+                    span
+                      i.icon-comment2.mr-2
+                      | 5 Comments
+                p.mb-4 A lovely welcome to you.
+                p
+                  a.btn-custom(href="welcome.html")
+                    | Read More 
+                    span.ion-ios-arrow-forward
+          .col-md-8.d-flex
+            .row
+              .col-md-12
+                .blog-entry.ftco-animate.d-md-flex.align-items-center
+                  a.img.img-2.popup-vimeo.d-flex.align-items-center.justify-content-center(href="https://www.youtube.com/watch?v=xr6jzrM4DFE" target="_blank" style="background-image: url(images/loving-heart.jpg);")
+                    .icon.d-flex.align-items-center.justify-content-center
+                      span.ion-ios-play
+                  .text.text-2.p-4
+                    h3.mb-2
+                      a(href="posts/a-loving-heart.html") A Loving Heart is the Truest Wisdom
+                    .meta-wrap
+                      p.meta
+                        span
+                          i.icon-calendar.mr-2
+                          | Nov. 21, 2019
+                        span
+                          a(href="posts/a-loving-heart.html")
+                            i.icon-folder-o.mr-2
+                            | Lifestyle
+                        span
+                          i.icon-comment2.mr-2
+                          | 5 Comment
+                    p.mb-4
+                      | An important lesson I’ve learned in life — I discovered from a quote by novelist Charles Dickens, one of my favorite writers
+                    p
+                      a.btn-custom(href="posts/a-loving-heart.html")
+                        | Read More 
+                        span.ion-ios-arrow-forward
+              .col-md-12
+                .blog-entry.ftco-animate.d-md-flex.align-items-center
+                  a.img.img-2.order-md-last(href="posts/live-life-with-purpose.html" style="background-image: url(images/purpose-1068x712.jpg);")
+                  .text.text-2.text-md-right.p-4
+                    h3.mb-2
+                      a(href="posts/live-life-with-purpose.html") Live Life With Purpose
+                    .meta-wrap
+                      p.meta
+                        span
+                          i.icon-calendar.mr-2
+                          | Nov. 21, 2019
+                        span
+                          a(href="posts/live-life-with-purpose.html")
+                            i.icon-folder-o.mr-2
+                            | Lifestyle
+                        span
+                          i.icon-comment2.mr-2
+                          | 5 Comment
+                    p.mb-4
+                      | The mystery of human existence lies not in just staying alive, but in finding something to live for.
+                      br
+                      | – Fyodor Dostoyevsky
+                    p
+                      a.btn-custom(href="live-life-with-purpose.html")
+                        | Read More 
+                        span.ion-ios-arrow-forward
+  // loader
+  #ftco-loader.show.fullscreen
+    svg.circular(width="48px" height="48px")
+      circle.path-bg(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee")
+      circle.path(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00")

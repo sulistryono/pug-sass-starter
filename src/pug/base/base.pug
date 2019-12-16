@@ -1,13 +1,75 @@
 doctype html
 html(lang="en")
   head
+    title Our Journey Begins
     meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
-    title Pug-Sass Starter
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    // Google site verification
+    meta(name="google-site-verification" content="NlFfp3oevWwITPpfPhtD5n61PUHVk4g6DD1gW68sbRg")
     // Styles
-    link(href="./assets/css/styles.min.css", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="css/open-iconic-bootstrap.min.css")
+    link(rel="stylesheet" href="css/animate.css")
+    link(rel="stylesheet" href="css/owl.carousel.min.css")
+    link(rel="stylesheet" href="css/owl.theme.default.min.css")
+    link(rel="stylesheet" href="css/magnific-popup.css")
+    link(rel="stylesheet" href="css/aos.css")
+    link(rel="stylesheet" href="css/ionicons.min.css")
+    link(rel="stylesheet" href="css/bootstrap-datepicker.css")
+    link(rel="stylesheet" href="css/jquery.timepicker.css")
+    link(rel="stylesheet" href="css/flaticon.css")
+    link(rel="stylesheet" href="css/icomoon.css")
+    link(rel="stylesheet" href="css/style.css")
+    //- link(href="./assets/css/styles.min.css", rel="stylesheet")
+    // FAVICON
+    link(rel="shortcut icon" type="image/png" href="favicon.ico/favicon-16x16.png")
+
+    // Start of Async Drift Code
+    script.
+      "use strict";
+      !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+      t.factory = function(e) {
+      return function() {
+      var n = Array.prototype.slice.call(arguments);
+      return n.unshift(e), t.push(n), t;
+      };
+      }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+      }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+      };
+      }
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('pu88nekwzsb8');
+    // End of Async Drift Code
   body
     block layout
     // Scripts
-    script(src="./assets/js/scripts.min.js")
+    // Notification form Handler - DevLess
+    script.devless-connection(src="http://kgyimah.herokuapp.com/js/devless-sdk.js" devless-con-token="1c7bcbb0f9671b0086cd2dc61a74216f")
+    script(src="js/jquery.min.js")
+    script(src="js/jquery-migrate-3.0.1.min.js")
+    script(src="js/popper.min.js")
+    script(src="js/bootstrap.min.js")
+    script(src="js/jquery.easing.1.3.js")
+    script(src="js/jquery.waypoints.min.js")
+    script(src="js/jquery.stellar.min.js")
+    script(src="js/owl.carousel.min.js")
+    script(src="js/jquery.magnific-popup.min.js")
+    script(src="js/aos.js")
+    script(src="js/jquery.animateNumber.min.js")
+    script(src="js/scrollax.min.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false")
+    script(src="js/google-map.js")
+    script(src="js/main.js")
+    //- script(src="./assets/js/scripts.min.js")
