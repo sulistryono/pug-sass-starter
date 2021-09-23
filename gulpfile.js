@@ -1,5 +1,5 @@
 var gulp    = require('gulp'),
-    sass    = require('gulp-sass'),
+    sass    = require('gulp-sass')(require('sass')),
     connect = require('gulp-connect'),
     pug     = require('gulp-pug'),
     plumber = require('gulp-plumber'),
