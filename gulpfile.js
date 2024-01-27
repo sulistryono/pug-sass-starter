@@ -61,7 +61,6 @@ function views() {
         pretty: true
     }))
     .pipe(gulp.dest('./'))
-    .pipe(connect.reload())
   )
 }
 
